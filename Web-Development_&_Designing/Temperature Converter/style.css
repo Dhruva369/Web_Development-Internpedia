@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url(bg.gif) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.container{
+    max-width: 500px;
+    background: #003333;
+    box-shadow: 0px 0px 15px 3px rgba(0,0,0,0.4);
+    padding: 20px;
+    background: rgba(0, 0, 0, .1);
+    border: 2px solid rgba(255, 255, 255, .12);
+    backdrop-filter: blur(45px);
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, .3);
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+    gap: 10px;
+    font-family: "Exo 2", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.Temperature-icon{
+    font-size: 45px;
+    color: #000;
+}
+
+h1{
+    color: #000;
+    letter-spacing: 1px;
+    font-size: 30px;
+}
+
+#celsius, #fahrenheit, #kelvin{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+}
+
+input{
+    flex: 5;
+    height: 60px;
+    font-size: 20px;
+    font-weight: 300;
+    text-align: center;
+    border: none;
+    outline: none;
+    border-radius: 30px 0 0 30px ;
+    padding: 0 10px;
+}
+
+input::placeholder{
+    text-align: left;
+    padding: 0 20px
+}
+
+
+/* for chrome, safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+}
+
+/* for Mozila firefox */
+input{
+    appearance: textfield;
+}
+
+
+.icon{
+    flex: 1;
+    height: 60px;
+    line-height: 60px;
+    padding: 0 5px;
+    text-align: center;
+    font-size: 30px;
+    background: #4d5964;
+    color: #fff;
+    border-radius: 0 17px 17px 0;
+}
+
+
+.button{
+    margin-top: 25px;
+    text-align: center;
+}
+
+
+.button button{
+    border: none;
+    outline: none;
+    padding: 10px 30px;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.3s;
+    background-color: #000;
+    color: #fec2b7;
+    box-shadow: 1px 1px 4px rgba(255, 255, 255, .2);
+
+}
+
+.button button:hover{
+    background: #af483f;
+    color: #fec2b7;
+}
